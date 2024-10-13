@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Profile Container -->
+    <div class="container">
+        <h2>User Profile</h2>
+
+        <!-- Display User Information -->
+        <div class="user-info">
+            <p><strong>Name:</strong> <span id="displayName">-</span></p>
+            <p><strong>Date of Birth:</strong> <span id="displayDOB">-</span></p>
+            <p><strong>Favorite Color:</strong> <span id="displayColor">-</span></p>
+            <p><strong>Email:</strong> <span id="displayEmail">-</span></p>
+        </div>
+
+        <!-- Profile Update Form -->
+        <div class="form">
+            <input type="text" id="name" placeholder="Full Name">
+            <input type="date" id="dob" placeholder="Date of Birth">
+            <input type="text" id="favoriteColor" placeholder="Favorite Color">
+            <input type="email" id="email" placeholder="Email Address">
+            <button class="btn" onclick="saveProfile()">Save Profile</button>
+        </div>
+
+        <!-- Confirmation Message -->
+        <div class="message" id="message" style="display: none;">Profile updated successfully!</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
